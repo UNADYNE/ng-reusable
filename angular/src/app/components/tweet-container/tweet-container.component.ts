@@ -23,8 +23,7 @@ export class TweetContainerComponent implements OnInit {
                                  tweet.fromUser,
                                  tweet.toUser,
                                  tweet.body);
-      this.tweets.push(newTweet);
-      this.tweets.reverse();
+      this.tweets.unshift(newTweet);
     });
   }
 
