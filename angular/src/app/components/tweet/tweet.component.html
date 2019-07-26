@@ -1,0 +1,7 @@
+<div class="tweet">
+  <div class="date">{{tweet.date | date: 'M/d/yy, h:mm a'}}</div>
+  <div class="from-user">{{tweet.fromUser}}</div>
+  <div class="to-user">{{tweet.toUser}}</div>
+  <div class="body">{{tweet.body}}</div>
+  <button class="read" (click)="markRead()">Mark as Read</button>
+</div>

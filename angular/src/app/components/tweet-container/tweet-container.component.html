@@ -1,0 +1,7 @@
+<div class="tweets-container">
+  <button class="send" (click)="sendTestTweet()">SEND</button>
+  <app-tweet *ngFor="let tweet of tweets; let i = index;"
+             [tweet]="tweet"
+             (isRead)="receiveReadEvent($event, i)">
+  </app-tweet>
+</div>
